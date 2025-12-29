@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Birthday Reminder</title>
+        <link rel="stylesheet" href="style.css"/>
+    </head>
+    <body>
+        <h1 class="title">Birthday Reminder</h1>
+        <div class="form-container">
+            <form class="form" id="form">
+                <div class="input">
+                    <label for="name">Name</label>
+                    <input type="text" name="name" id="name"/>
+                </div>
+                <div class="input">
+                    <label for="email">Email</label>
+                    <input type="email" name="email" id="email"/>
+                </div>
+                <div class="input">
+                    <label for="date">Date</label>
+                    <input type="date" name="date" id="date"/>
+                </div>
+                
+                <button class="btn" type="submit">Confirm</button>
+            </form>
+        </div>
+        <div id="info-container"></div>
+        <div class="btn-info" id="btn-info"></div>
+        
+        <script src="script.js"></script>
+        
+        <script src="https://cdn.jsdelivr.net/npm/eruda"></script>
+        <script>eruda.init();</script>
+    </body>
+</html>
