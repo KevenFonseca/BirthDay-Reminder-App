@@ -2,7 +2,7 @@ const cron = require('node-cron')
 const checkBirthdays = require('../services/birthdayService')
 
 const startBirthdayCron = () => {
-    cron.schedule('* * * * *', async () => {
+    cron.schedule('30 22 * * *', async () => {
         console.log('Checking birthdays')
         await checkBirthdays()
     })
