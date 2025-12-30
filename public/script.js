@@ -23,8 +23,7 @@ form.addEventListener('submit', async (e) => {
         
         if (res.ok) {
             console.log(data)
-            alert(JSON.stringify(data))
-            //alert('User info save successfully')
+            alert('User info save successfully')
         } else {
             alert(data.error || 'User info not send')
         }

@@ -1,5 +1,5 @@
 const cron = require('node-cron')
-const checkBirthdays = require('../services/birthday.service')
+const checkBirthdays = require('../services/birthdayService')
 
 const startBirthdayCron = () => {
     cron.schedule('* * * * *', async () => {
@@ -8,4 +8,4 @@ const startBirthdayCron = () => {
     })
 }
 
-module.exports = startBirthdayCron
+module.exports = startBirthdayCron 

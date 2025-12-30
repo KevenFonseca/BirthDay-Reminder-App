@@ -1,6 +1,6 @@
 const express = require('express')
-const userRoute = require('./routes/user.route')
-const startBirthdayCron = require('./jobs/birthday.cron')
+const userRoute = require('./routes/userRoute')
+const startBirthdayCron = require('./jobs/birthdayCron')
 
 const app = express()
 

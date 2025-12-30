@@ -1,5 +1,5 @@
-const userModel = require('../models/user.model')
-const sendBirthdayEmail = require('./email.service')
+const userModel = require('../models/userModel')
+const sendBirthdayEmail = require('./emailService')
 
 const checkBirthdays = async () => {
     const today = new Date()
@@ -17,10 +17,10 @@ const checkBirthdays = async () => {
     
     console.log(users)
     
-    for (user of users) {
+    for (const user of users) {
         await sendBirthdayEmail(user.userName, user.email)
     }
     
 }
 
-module.exports = checkBirthdays
+module.exports = checkBirthdays 
