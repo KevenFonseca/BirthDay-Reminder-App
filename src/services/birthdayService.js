@@ -1,5 +1,5 @@
 const userModel = require('../models/userModel')
-const sendBirthdayEmail = require('./emailService')
+const sendBirthdayEmail = require('./sendBirthdayEmail')
 
 const checkBirthdays = async () => {
     const today = new Date()

@@ -2,9 +2,9 @@ const joi = require('joi')
 
 const userSchema = joi.object({
     userName: joi.string()
-        .alphanum()
-        .min(3)
-        .max(20)
+        .min(2)
+        .max(50)
+        .pattern(new RegExp('^[a-zA-Z ]+$'))
         .required(),
         
     email: joi.string()
@@ -12,8 +12,7 @@ const userSchema = joi.object({
         .required(),
         
     dateOfBirth: joi.date()
-        .min('1930-01-01')
-        .max('2010-12-31')
+        .max('now')
         .required()
 })
     
