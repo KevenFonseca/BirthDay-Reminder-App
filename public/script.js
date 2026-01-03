@@ -3,9 +3,9 @@ const form = document.getElementById('form')
 form.addEventListener('submit', async (e) => {
     e.preventDefault()
     
-    const userName = document.getElementById('name').value.trim()
+    const userName = document.getElementById('username').value.trim()
     const email = document.getElementById('email').value.trim()
-    const dateOfBirth = document.getElementById("date").value
+    const dateOfBirth = document.getElementById("dateofbirth").value
     
     if (!userName || !email || !dateOfBirth) {
         alert('Please fill all fields')
@@ -26,32 +26,6 @@ form.addEventListener('submit', async (e) => {
             alert('User info save successfully')
         } else {
             alert(data.error || 'User info not send')
-        }
-        
-    } catch (err) {
-        console.log(err)
-        alert('Network error, try again')
-    }
-})
-
-const infoContainer = document.getElementById('info-container')
-const btnInfo = document.getElementById('btn-info')
-
-btnInfo.addEventListener('click', async (e) => {
-    btnInfo.style.backgroundColor = 'blue'
-    
-    try {
-        const res = await fetch('/user', {
-            method: 'GET',
-            headers: {'Content-Type': 'application/json'}
-        })
-        
-        const data = await res.json()
-        
-        if (res.ok) {
-            console.log(JSON.stringify(data))
-        } else {
-            alert(data.error || 'Error getting the list')
         }
         
     } catch (err) {

@@ -4,7 +4,7 @@ const { Schema } = mongoose
 const userSchema = new Schema({
     userName: {
         type: String,
-        pattern: /^[a-zA-ZÀ-ÿ\s'-]+$/,
+        match: /^[a-zA-ZÀ-ÿ\s'-]+$/,
         required: true,
         trim: true
     }, 

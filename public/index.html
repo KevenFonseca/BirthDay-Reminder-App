@@ -5,31 +5,31 @@
         <link rel="stylesheet" href="style.css"/>
     </head>
     <body>
-        <h1 class="title">Birthday Reminder</h1>
+        <h1 class="title">🥳 Birthday Reminder</h1>
+
         <div class="form-container">
+            <h2 class="form-title">Register Your Birthday</h2>            
             <form class="form" id="form">
                 <div class="input">
-                    <label for="name">Name</label>
-                    <input type="text" name="name" id="name"/>
+                    <label for="username">Username</label>
+                    <input type="text" name="username" id="username" placeholder="Enter your username"/>
                 </div>
                 <div class="input">
-                    <label for="email">Email</label>
-                    <input type="email" name="email" id="email"/>
+                    <label for="email">Email Address</label>
+                    <input type="email" name="email" id="email" placeholder="Enter your email"/>
                 </div>
                 <div class="input">
-                    <label for="date">Date</label>
-                    <input type="date" name="date" id="date"/>
+                    <label for="dateofbirth">Date of Birth</label>
+                    <input type="date" name="dateofbirth" id="dateofbirth"/>
                 </div>
                 
-                <button class="btn" type="submit">Confirm</button>
+                <button class="btn" type="submit">Register</button>
             </form>
         </div>
-        <div id="info-container"></div>
-        <div class="btn-info" id="btn-info"></div>
         
-        <script src="script.js"></script>
-        
-        <script src="https://cdn.jsdelivr.net/npm/eruda"></script>
-        <script>eruda.init();</script>
+        <script src="script.js"></script>  
+
+        <!-- <script src="https://cdn.jsdelivr.net/npm/eruda"></script>
+        <script>eruda.init();</script> -->
     </body>
 </html>
