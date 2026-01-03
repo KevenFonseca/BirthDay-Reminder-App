@@ -71,6 +71,10 @@ body {
     outline-color: #3cdbd3;
 }
 
+.input > input[type="date"] {
+    width: 100%;
+}
+
 .btn {
     font-size: 3.2rem;
     font-weight: 700;
